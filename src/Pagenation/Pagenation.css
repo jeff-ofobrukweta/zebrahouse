@@ -1,0 +1,54 @@
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    margin-left: 0%;
+  }
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  
+  .main {
+    padding: 16px;
+    margin-bottom: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+  .pagnation-card-right-bottom{
+    background: #fff;
+    width: 100%;
+    height: 37px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 8px 7px rgba(0,0,0,0.22);
+      
+  }
+/* pagenation-start here */
+  .pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #197be4;
+    color: white;
+    border-radius: 23%;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 23%;
+}

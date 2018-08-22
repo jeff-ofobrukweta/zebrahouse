@@ -1,0 +1,76 @@
+/* Split the screen in half */
+.split-trans {
+    height: 990px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left-trans {
+    left: 0;
+    background-color: #2a2a2a;
+    width: 15%;
+    color: #fff;
+  }
+  
+  /* Control the right side */
+  .right-trans {
+    right: 0;
+    width: 85%;
+    height:800px;
+    height:fill-available;
+    /* filter: blur(1.8px); */
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered-trans {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* side bar css */
+  .sidebar-container{
+      display: flex;
+      flex-direction: column;
+      text-align:center;
+      margin: 90% 0%;
+  }
+  .sidebar-container-item-1,
+  .sidebar-container-item-2,
+  .sidebar-container-item-3,
+  .sidebar-container-item-4,
+  .sidebar-container-item-5{
+    height: 60px;
+    width: 130%;
+    margin: 0 -14.6%;
+    /* position: relative;
+    right: 31px; */
+  }
+  .sidebar-container-item-1:hover,
+  .sidebar-container-item-2:hover,
+  .sidebar-container-item-3:hover,
+  .sidebar-container-item-4:hover,
+  .sidebar-container-item-5:hover{
+   background: #161616;
+  }
+
+  .parent-sidebar-container{
+      display: flex;
+      flex-direction: column;
+      margin: 10% 13%;
+  }
+  .sidebar-container-item-1 a,
+  .sidebar-container-item-2 a,
+  .sidebar-container-item-3 a,
+  .sidebar-container-item-4 a,
+  .sidebar-container-item-5 a{
+    position: relative;
+    top:30%;
+  }
+  

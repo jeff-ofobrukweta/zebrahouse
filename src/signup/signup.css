@@ -1,0 +1,92 @@
+body {
+    font-family: Arial;
+}
+
+.split {
+    height: 100%;
+    /* width: 50%; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    background:url('../image/apparel-boutique-colors-135620.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90%;
+    width: 55%;
+    left: 0;
+}
+
+.right {
+    right: 0;
+    width: 45%;
+    background-color: #eee;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+/* board */
+.mode{
+    position: relative;
+    z-index:10;
+    width: 550px;
+    height: 320px;
+    background: rgba(248, 19, 61, 0.81);
+    margin: 61px auto !important;
+    transform: translate(-30%, 50.5%);
+}
+/* flex-footer */
+.flex-footer-container{
+    display: flex;
+}
+.flex-item-1{
+    flex-basis: 40%;
+    padding: 0 5px;
+    font-size: 12.9px;
+}
+.flex-item-2{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.flex-item-inner-1,.flex-item-inner-2,.flex-item-inner-3{
+    flex-basis:20%;
+}
+.signup-input-frontpage-1,.signup-input-frontpage-2{
+    border: 0px;
+    outline: none;
+    height: 32px;
+    width: 80%;
+    margin: .9px 0px;
+    padding:1%;
+
+}
+
+/* buttons style */
+.signin{
+    height: 30px;
+    margin: 5% 0px;
+    outline: 0;
+    color: #fff;
+    background: #848282;
+    border: none;
+    width: 30%;
+    border-radius: 2px;
+}
