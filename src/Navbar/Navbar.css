@@ -49,18 +49,18 @@ li a {
     transition: -webkit-transform 0.75s;
     transition: transform 0.75s;
     transition: transform 0.75s, -webkit-transform 0.75s;
-    max-width: 90%;
+    max-width: 100%;
     min-height:100%;
-    width: 450px;
+    height: 400px;
+    width: 800px;
     background-color: #fafafa;
     padding: 20px;
     left: 50%;
-    -webkit-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 20%);
+            transform: translate(-50%, 20%);
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
     color: #080808;
     border-radius: 5px;
-    pointer-events: none;
   }
   .modal-box-for-transaction-none{
       display: none;
@@ -95,7 +95,7 @@ li a {
 
 .right-modal-add {
     right: 0;
-    background-color: red;
+    background-color: #fafafa;
 }
 
 .centered-modal-add {
@@ -114,8 +114,54 @@ li a {
     position: relative;
     top: -17px;
     left: 92%;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 500;
 }
 /* drop-down-select-in modal */
+.modal-input-select{
+    border: none;
+    border-bottom: 2px solid #1a7be4;
+    background: transparent;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  /* the modal-label color */
+  .label{
+      color: #1a7be4;
+  }
+
+
+  .button-1{
+    width: 35%;
+    height: 40px;
+    margin-right: 22px;
+    font-size: 19px;
+    background: #0258b6;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border-radius: 3px;
+  }
+  .button-2{
+    width: 35%;
+    height: 40px;
+    margin-left: 0px;
+    font-size: 19px;
+    background: #ff0037;
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+  }
 

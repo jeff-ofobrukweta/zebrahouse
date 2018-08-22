@@ -30,7 +30,7 @@ class Navbar extends Component {
       <ul className="first-navbar">
       <li><a class="active" href="#home"><b>Transaction</b></a></li>
       <li><a href="#news"><b>Sort:</b>Newest</a></li>
-      <li style={{marginLeft: '30%',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
+      <li style={{marginLeft: '20%',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
       <li><a href="#about"><small>About</small></a></li>
       <li><a href="#about"><img src={Profile} alt="profilepics" className="circle-icon" style={{borderRadius: '50%',background:"#eee",width:"50px",height:"50px"}}/></a></li>
     </ul>
@@ -52,16 +52,49 @@ class Navbar extends Component {
     </ul>
     <div className={addTransactionarray} id={this.props.array}>
     <div class="split-modal-add left-modal-add">
-          <input type="text"/>
+          <form style={{margin:'0 10%'}}>
+          <div style={{margin:'5% 0',fontSize:' 20px',color:'#1a7be4'}}>Add New</div>
+          <section>
+            <small className="label">Type</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          <section>
+            <small className="label">item/Service</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          <section>
+            <small className="label">Type of Custormer</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          <section>
+           <small className="label">Ammount</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          </form>
     </div>
 
     <div class="split-modal-add right-modal-add">
     <span class="close-action">&times;</span>
-      <div class="centered-modal-add">
-        <img src="img_avatar.png" alt="Avatar man"/>
-        <h2>John Doe</h2>
-        <p>Some text here too.</p>
-      </div>
+          <form style={{margin:'101px 10%'}}>
+          <section>
+            <small className="label">item/Service</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          <section>
+            <small className="label">Type of Custormer</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+          <section>
+          <small className="label">Ammount</small>
+          </section>
+          <input type="text" className="modal-input-select" style={{width: '331px'}}/>
+           <section>
+            <span>
+            <input type="submit" className="button-1" value="Add"/>
+            <input type="submit" className="button-2" value="Cancel"/>
+            </span>
+          </section>
+          </form>
     </div>
     </div>
       </div>
