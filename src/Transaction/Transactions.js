@@ -5,6 +5,9 @@ import Pagenation from '../Pagenation/Pagenation';
 import './Transactions.css';
 
 class App extends Component {
+  componentDidMount(){
+    console.log(window);
+  }
   render() {
     return (
       <div className="Transactions">

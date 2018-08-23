@@ -1,0 +1,55 @@
+.Receipt{
+    background:url('../image/apparel-boutique-colors-135620.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90%;
+    margin: -128px 22%;
+    width: 60%;
+    z-index: 99;
+    height: auto;
+    position: absolute;
+}
+.right-div{
+    background: #ffffff;
+    width: 60%;
+    height: auto;
+    margin: 3.2% 37%;
+}
+.middle-position-card{
+    padding: 10% 10%;
+    max-width: 90%;
+}
+.flex-container{
+    display: flex;
+    margin-top: 7%;
+}
+.print{
+    margin-left: 56%;
+}
+.table-content{
+    margin: 10px 0px;
+}
+.th-part{
+    width: 100%;
+}
+.td-part{
+    padding: 3px 8px;
+}
+.background-fade{
+    width:50%;
+    height: 50px;
+    background: red;
+}
+.receipt-parent-background{
+    background:rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: auto;
+    top: 0;
+    width: 100%;
+    height: 240em;
+}
+
+/* to display the modal and its effect */
+.receipt-wrapper{
+    display: none;
+}

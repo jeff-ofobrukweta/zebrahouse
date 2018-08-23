@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Profile from '../image/apparel-boutique-colors-135620.jpg';
+import Receipt from '../Receipt/Receipt';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -30,7 +31,7 @@ class Navbar extends Component {
       <ul className="first-navbar">
       <li><a class="active" href="#home"><b>Transaction</b></a></li>
       <li><a href="#news"><b>Sort:</b>Newest</a></li>
-      <li style={{marginLeft: '20%',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
+      <li style={{marginLeft: '18em',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
       <li><a href="#about"><small>About</small></a></li>
       <li><a href="#about"><img src={Profile} alt="profilepics" className="circle-icon" style={{borderRadius: '50%',background:"#eee",width:"50px",height:"50px"}}/></a></li>
     </ul>
@@ -38,7 +39,7 @@ class Navbar extends Component {
       <li><a class="active" href="#home"><div className="borderbottom" style={{fontSize:'22px'}}><b>All</b></div></a></li>
       <li><a href="#news"><b>Old</b></a></li>
       <li><a href="#about"><b>New</b></a></li>
-      <li  style={{marginLeft: '32%',position:'relative'}}><a href="#about"><input type="submit" onClick={this.handleAddtransaction}  value="ADD TRANSACTION" className="blue-submit" style={{
+      <li  style={{marginLeft: '36em',position:'relative'}}><a href="#about"><input type="submit" onClick={this.handleAddtransaction}  value="ADD TRANSACTION" className="blue-submit" style={{
         width: '150px',
         height: '35px',
         outline: 'none',
@@ -50,10 +51,11 @@ class Navbar extends Component {
         color: '#fff',
       }}/></a></li>
     </ul>
-    <div className={addTransactionarray} id={this.props.array}>
+    <Receipt/>
+    <div className={addTransactionarray}>
     <div class="split-modal-add left-modal-add">
           <form style={{margin:'0 10%'}}>
-          <div style={{margin:'5% 0',fontSize:' 20px',color:'#1a7be4'}}>Add New</div>
+          <div style={{margin:'5.15% 0',fontSize:' 20px',color:'#1a7be4'}}>Add New</div>
           <section>
             <small className="label">Type</small>
           </section>
@@ -63,11 +65,11 @@ class Navbar extends Component {
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
           <section>
-            <small className="label">Type of Custormer</small>
+            <small className="label">Name of Custormer</small>
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
           <section>
-           <small className="label">Ammount</small>
+           <small className="label">Amount</small>
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
           </form>
@@ -75,23 +77,22 @@ class Navbar extends Component {
 
     <div class="split-modal-add right-modal-add">
     <span class="close-action">&times;</span>
-          <form style={{margin:'101px 10%'}}>
+          <form style={{margin: '4.73em 0em'}}>
           <section>
-            <small className="label">item/Service</small>
+            <small className="label">Quantity</small>
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
           <section>
-            <small className="label">Type of Custormer</small>
+            <small className="label">Mode of Payment</small>
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
           <section>
-          <small className="label">Ammount</small>
+          <small className="label">Card Code</small>
           </section>
           <input type="text" className="modal-input-select" style={{width: '331px'}}/>
            <section>
             <span>
             <input type="submit" className="button-1" value="Add"/>
-            <input type="submit" className="button-2" value="Cancel"/>
             </span>
           </section>
           </form>

@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow-x: hidden;
+    overflow-y: auto;
     padding-top: 20px;
   }
   
@@ -22,6 +22,7 @@
     width: 85%;
     height:800px;
     height:fill-available;
+    height: stretch;
     /* filter: blur(1.8px); */
   }
   
@@ -63,7 +64,7 @@
   .parent-sidebar-container{
       display: flex;
       flex-direction: column;
-      margin: 10% 13%;
+      margin: 2.3em 13%;
   }
   .sidebar-container-item-1 a,
   .sidebar-container-item-2 a,

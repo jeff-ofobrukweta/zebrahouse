@@ -3,7 +3,17 @@ import Pics from '../image/apparel-boutique-colors-135620.jpg';
 import './signup.css';
 
 class Signup extends Component {
-    
+  constructor(props){
+    super(props);
+    this.state ={
+        
+    }
+    this.handlesubmitlogin = this.handleSubmitlogin.bind(this);
+}
+handleSubmitlogin = async (event)=>{
+  event.preventDefault();
+  this.props.history.push('/transactions');
+}
   render() {
     return (
       <div>
@@ -16,7 +26,7 @@ class Signup extends Component {
       <div className="centered">
         <section>
         <div style={{marginBottom:'5%'}}><b style={{color:'rgba(248, 19, 61, 0.94)'}}>Login</b><span style={{color:'#848282'}}> to Admin Dashboard to view stats</span></div>
-        <form>
+        <form onSubmit={this.handleSubmitlogin}>
           <input type="text" placeholder="Email" className="signup-input-frontpage-1"/>
           <input type="text" placeholder="Password" className="signup-input-frontpage-2"/>
           <input type="submit" value="Proceed" className="signin"/>
