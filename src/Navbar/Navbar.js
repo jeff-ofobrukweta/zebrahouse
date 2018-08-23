@@ -31,7 +31,7 @@ class Navbar extends Component {
       <ul className="first-navbar">
       <li><a class="active" href="#home"><b>Transaction</b></a></li>
       <li><a href="#news"><b>Sort:</b>Newest</a></li>
-      <li style={{marginLeft: '18em',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
+      <li style={{marginLeft: '8em',position:'relative'}}><a href="#contact"><input type="text" placeholder="Search" className="search-bar-top-right"/></a></li>
       <li><a href="#about"><small>About</small></a></li>
       <li><a href="#about"><img src={Profile} alt="profilepics" className="circle-icon" style={{borderRadius: '50%',background:"#eee",width:"50px",height:"50px"}}/></a></li>
     </ul>
@@ -39,7 +39,7 @@ class Navbar extends Component {
       <li><a class="active" href="#home"><div className="borderbottom" style={{fontSize:'22px'}}><b>All</b></div></a></li>
       <li><a href="#news"><b>Old</b></a></li>
       <li><a href="#about"><b>New</b></a></li>
-      <li  style={{marginLeft: '36em',position:'relative'}}><a href="#about"><input type="submit" onClick={this.handleAddtransaction}  value="ADD TRANSACTION" className="blue-submit" style={{
+      <li  style={{marginLeft: '28em',position:'relative'}}><a href="#about"><input type="submit" onClick={this.handleAddtransaction}  value="ADD TRANSACTION" className="blue-submit" style={{
         width: '150px',
         height: '35px',
         outline: 'none',
