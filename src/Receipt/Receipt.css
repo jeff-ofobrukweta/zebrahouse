@@ -26,6 +26,14 @@
 .print{
     margin-left: 56%;
     cursor: pointer;
+    width: 46px;
+    height: 43px;
+    border-radius: 50%;
+    text-align: center;
+}
+.print:hover{
+    background:#d5d5d5e8;
+    transition: all .7s ease-in-out;
 }
 .table-content{
     margin: 10px 0px;

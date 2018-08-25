@@ -17,7 +17,7 @@ class Printreceipt extends Component {
                     <div><b>Customer Receipt</b></div>
                     <div className="flex-container">
                         <small>Customer Receipt</small>
-                        <small className="print"><img src={Print} onClick={this.handleprint} alt="print" className="print-icon"/></small>
+                        <small className="print"><img src={Print} style={{position: 'relative',top: '10%'}} onClick={this.handleprint} alt="print" className="print-icon"/></small>
                     </div>
                     <div className="table-content">
                     <table className="table-recept" style={{
@@ -46,7 +46,7 @@ class Printreceipt extends Component {
                 <div style={{borderBottom: '2px solid rgb(228, 228, 228)'}}>
                 <div className="flex-container">
                     <small>Customer Receipt</small>
-                    <small className="print">Print</small>
+                    <small>Print</small>
                 </div>
                 <div className="table-content">
                 <table className="table-recept" style={{fontSize: '13px',margin: '-3%',marginBottom:'-1%'}}>
