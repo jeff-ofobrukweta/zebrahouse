@@ -14,15 +14,15 @@
 }
 /* fall-back style for IE, Firefox and Chrome specification and size */
 @page {
-    size: A4 landscape;
+    size: A4 portrait;
   }
   
   /* Size in mm */    
   @page {
-    size: 100mm 200mm landscape;
+    size: 100mm 200mm portrait;
   }
   
   /* Size in inches */    
   @page {
-    size: 4in 6in landscape;
+    size: 4in 6in portrait;
   }
