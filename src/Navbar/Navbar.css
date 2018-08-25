@@ -125,7 +125,7 @@ li a {
     top: -17px;
     left: 92%;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: bolder;
     cursor: pointer;
 }
 /* drop-down-select-in modal */

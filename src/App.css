@@ -19,10 +19,10 @@
   
   /* Size in mm */    
   @page {
-    size: 50mm 100mm landscape;
+    size: 100mm 200mm landscape;
   }
   
   /* Size in inches */    
   @page {
-    size: 2in 3in landscape;
+    size: 4in 6in landscape;
   }

@@ -48,7 +48,7 @@ class Navbar extends Component {
             <li><a href="#news"><b>Old</b></a></li>
             <li><a href="#about"><b>New</b></a></li>
             <li className="button-addtransaction"><a href="#addTransaction"> <button onClick={this.handleAddtransaction} className="blue-submit"  style={{
-              width: '150px',
+              width: '153px',
               height: '35px',
               outline: 'none',
               border: 'none',
