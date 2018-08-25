@@ -25,6 +25,7 @@
 }
 .print{
     margin-left: 56%;
+    cursor: pointer;
 }
 .table-content{
     margin: 10px 0px;
