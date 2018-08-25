@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Pagenation.css';
+import LeftArrow from '../image/LeftArrow.svg';
 
 class Pagenation extends Component {
   render() {

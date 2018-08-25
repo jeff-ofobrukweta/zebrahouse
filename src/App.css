@@ -1,2 +1,28 @@
 /* https://www.youtube.com/watch?v=Kyx2PsuwomE */
 /* docker-learning */
+
+
+/* this specify the area to be printed -out */
+/* printing receipt */
+@media print{
+    .left-trans *,.Pagenation,.receipt-parent-background { display:none; }
+   .right-div,.Printreceipt * {
+        filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+        display:block; page-break-before: always;margin: 0 auto;}
+    /* remove the printer sign */
+    img{opacity:0}
+}
+/* fall-back style for IE, Firefox and Chrome specification and size */
+@page {
+    size: A4 landscape;
+  }
+  
+  /* Size in mm */    
+  @page {
+    size: 50mm 100mm landscape;
+  }
+  
+  /* Size in inches */    
+  @page {
+    size: 2in 3in landscape;
+  }

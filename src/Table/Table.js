@@ -15,9 +15,7 @@ class Table extends Component {
     const modal = document.querySelector('.receipt-parent-background');
 
       window.onclick=((event)=>{
-        if(this.state.addView === true){
-          console.log(">>>>",this.state.addView,event.target);
-      
+        if(this.state.addView === true){      
           if(event.target === modal || event.target === document.querySelector('.Receipt')){
                modal.style.display = 'none';
                document.querySelector('.Receipt').style.display = "none";    
@@ -29,11 +27,13 @@ class Table extends Component {
      })
   }
 
-  handleView=()=>{
+  handleView=(event)=>{
     if(this.state.addView===false){
-      console.log(this.state.addView)
+    // const id = event.target.parentElement.parentElement.children[2].innerHTML
       document.querySelector('.receipt-wrapper').style.display = 'block';
-      this.setState({addView:true});
+      document.querySelector('.Receipt').style.display = "block";
+      document.querySelector('.receipt-parent-background').style.display = "block"; 
+      this.setState({addView:true});    
     }
   
 }
@@ -43,7 +43,7 @@ class Table extends Component {
     return (
       <div className="Table">
         <Navbar array={addviewionarray}/>
-      <table>
+      <table className="table-main">
       <tr>
         <th></th>
         <th>Item/Service</th>
@@ -64,7 +64,7 @@ class Table extends Component {
         </label>
         </td>
         <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
+        <td>145444444544678</td>
         <td>3</td>
         <td>N50</td>
         <td>N5,000</td>
@@ -88,109 +88,7 @@ class Table extends Component {
         <td>Tracy CHB</td>
         <td>Service</td>
         <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
-      </tr>
-      <tr className="card-table">
-        <td>
-        <label class="container">
-        <input type="checkbox"/>
-        <span class="checkmark"></span>
-        </label>
-        </td>
-        <td>307 Gentleman's Pedicure</td>
-        <td>145643567544678</td>
-        <td>3</td>
-        <td>N50</td>
-        <td>N5,000</td>
-        <td>Tracy CHB</td>
-        <td>Service</td>
-        <td>2018/05/19</td>
-        <td><input type="submit" value="view" className="button-view-table"/></td>
+        <td><input type="submit" onClick={this.handleView} value="view" className="button-view-table"/></td>
       </tr>
       <tr className="card-table">
         <td>

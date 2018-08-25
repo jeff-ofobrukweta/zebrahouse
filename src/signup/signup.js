@@ -28,7 +28,7 @@ handleSubmitlogin = async (event)=>{
         <div style={{marginBottom:'5%'}}><b style={{color:'rgba(248, 19, 61, 0.94)'}}>Login</b><span style={{color:'#848282'}}> to Admin Dashboard to view stats</span></div>
         <form onSubmit={this.handleSubmitlogin}>
           <input type="text" placeholder="Email" className="signup-input-frontpage-1"/>
-          <input type="text" placeholder="Password" className="signup-input-frontpage-2"/>
+          <input type="password" placeholder="Password" className="signup-input-frontpage-2"/>
           <input type="submit" value="Proceed" className="signin"/>
         </form>
         </section>
@@ -47,9 +47,9 @@ handleSubmitlogin = async (event)=>{
         <div>copyright 2018.Zebrahouse</div>
       </div>
       <div className="flex-item-2">
-        <div className="flex-item-inner-1">About</div>
-        <div className="flex-item-inner-2">Terms</div>
-        <div className="flex-item-inner-3">Policy</div>
+        <div className="flex-item-inner-1"><small>About</small></div>
+        <div className="flex-item-inner-2"><small>Terms</small></div>
+        <div className="flex-item-inner-3"><small>Policy</small></div>
       </div>
     </div>
     </div>

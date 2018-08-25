@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow-y: auto;
+    overflow-y:clip;
     padding-top: 20px;
   }
   
@@ -39,8 +39,9 @@
   .sidebar-container{
       display: flex;
       flex-direction: column;
+      flex: 1 0 auto;
       text-align:center;
-      margin: 90% 0%;
+      margin: 100% 0%;
   }
   .sidebar-container-item-1,
   .sidebar-container-item-2,
@@ -59,12 +60,14 @@
   .sidebar-container-item-4:hover,
   .sidebar-container-item-5:hover{
    background: #161616;
+   cursor: pointer;
   }
 
   .parent-sidebar-container{
       display: flex;
       flex-direction: column;
-      margin: 2.3em 13%;
+      margin: 2.1em 13%;
+      flex: 1 0 auto;
   }
   .sidebar-container-item-1 a,
   .sidebar-container-item-2 a,
@@ -73,5 +76,12 @@
   .sidebar-container-item-5 a{
     position: relative;
     top:30%;
+  }
+  .logo-zebra-house{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 3.4%;
+    width: 100%;
   }
   

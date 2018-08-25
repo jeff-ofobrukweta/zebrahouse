@@ -41,14 +41,16 @@ body {
 
 
 /* board */
-.mode{
-    position: relative;
-    z-index:10;
+.mode {
+    position: absolute;
+    z-index: 99;
     width: 550px;
     height: 320px;
     background: rgba(248, 19, 61, 0.81);
-    margin: 61px auto !important;
-    transform: translate(-30%, 50.5%);
+    margin: 5px auto !important;
+    -webkit-transform: translate(-30%, 55.5%);
+    -ms-transform: translate(-30%, 55.5%);
+    transform: translate(38%, 55.5%);
 }
 /* flex-footer */
 .flex-footer-container{

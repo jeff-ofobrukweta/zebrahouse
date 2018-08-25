@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 90%;
-    margin: -128px 22%;
+    margin: -140px 15%;
     width: 60%;
     z-index: 99;
     height: auto;
@@ -11,9 +11,9 @@
 }
 .right-div{
     background: #ffffff;
-    width: 60%;
+    width: 70%;
     height: auto;
-    margin: 3.2% 37%;
+    margin: 3.2% 30%;
 }
 .middle-position-card{
     padding: 10% 10%;
@@ -41,7 +41,7 @@
     background: red;
 }
 .receipt-parent-background{
-    background:rgba(0, 0, 0, .5);
+    background:#b8b8b8db;
     position: absolute;
     z-index: auto;
     top: 0;

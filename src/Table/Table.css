@@ -2,10 +2,18 @@ table, td, th {
     text-align: left;
 }
 
-table {
-    border-collapse: collapse;
-    /* width: 95%; */
+.table-main {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    width: 95%;
     margin: 0 auto;
+    margin-bottom: 10%;
+}
+.table-recept {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10%;
 }
 
 th, td {
@@ -13,24 +21,20 @@ th, td {
 }
 
 .card-table{
-    background: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        background: white;
+        box-shadow: 0 1px 3px rgba(0, 0, 10, 0), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(22.25,.8,6.25,1);
 }
-.card-table:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    /* transform: translate(0%, -15%); */
-  }
-.button-view-table{
-        width: 100px;
-        height: 35px;
-        outline: none;
-        border: none;
-        border-radius: 3px;
-        background:#187be4;
-        font-size:13px;
-        font-weight:400;
-        color: #fff;
+.button-view-table {
+    width: 90px;
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #187be4;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
 }
 .button-view-table:hover{
     box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22);

@@ -13,7 +13,7 @@ class App extends Component {
       <div className="Transactions">
       <div class="split-trans left-trans">
       <div className="parent-sidebar-container">
-        <div style={{margin:'0 auto',position: 'relative'}}>
+        <div className="logo-zebra-house">
             ZEBRA HOUSE
         </div>
         <div className="sidebar-container">
