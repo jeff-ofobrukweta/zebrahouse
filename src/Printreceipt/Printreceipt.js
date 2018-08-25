@@ -58,6 +58,22 @@ class Printreceipt extends Component {
                     <td className="td-part">Item(s)/service:</td>
                     <td className="td-part">307 Gentleman's Pedicure</td>
                     </tr>
+                    <tr>
+                    <td className="td-part">Item(s)/service:</td>
+                    <td className="td-part">307 Gentleman's Pedicure</td>
+                    </tr>
+                    <tr>
+                    <td className="td-part">Item(s)/service:</td>
+                    <td className="td-part">307 Gentleman's Pedicure</td>
+                    </tr>
+                    <tr>
+                    <td className="td-part">Item(s)/service:</td>
+                    <td className="td-part">307 Gentleman's Pedicure</td>
+                    </tr>
+                    <tr>
+                    <td className="td-part">Item(s)/service:</td>
+                    <td className="td-part">307 Gentleman's Pedicure</td>
+                    </tr>
                 </table>
                 </div>
             </div>
